@@ -1,0 +1,5 @@
+1- header :
+ logo, brand and (about, work, contact) 
+2- introduction: 
+title: Hello ... I'm Rayen 
+Image: my image 
