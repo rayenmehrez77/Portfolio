@@ -1,0 +1,279 @@
+* {
+    box-sizing: border-box;
+} 
+
+body {
+    padding: 0; 
+    margin: 0; 
+    background-color: #ecf0f1;
+    font-family: 'Poppins', sans-serif;  
+}  
+
+
+.header {
+    font-size: 15px;
+    display: flex;
+}
+
+.header h1 {
+    width: 300px; 
+    padding: 20px 30px 0 0 ;
+    color: #000; 
+    font-size: 30px;
+    font-family: 'Courgette', cursive; 
+    font-weight: bold;
+}
+
+
+.header span {
+    color: orange; 
+}
+
+
+.header .links {
+    list-style: none;  
+    text-align: right;
+    width: 100%; 
+    padding: 20px 150px;
+}
+
+.header .links li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.header .links li a {
+    text-decoration: none; 
+    color: black; 
+    font-weight: bold; 
+    font-size: 18px;
+}
+
+.header .links li a:hover {
+    color: orange; 
+    text-decoration: underline;
+} 
+
+.intro {
+    display: grid; 
+    grid-template-columns: 50% 50%; 
+} 
+
+.introduction-text {
+    padding: 50px 40px 0 0 ; 
+    margin-top: 30px;
+
+} 
+
+.introduction-text h1 {
+    font-size: 60px; 
+} 
+
+.introduction-text h2 {
+    font-size: 30px; 
+    font-family: 'Open Sans', sans-serif;
+}  
+.introduction-text span {
+    color: orange; 
+    text-decoration: underline;
+    font-family: 'Roboto', sans-serif;
+}
+
+.introduction-text p {
+    font-size: 18px; 
+    font-weight: bold; 
+    width: 410px; 
+    text-align: left;
+}
+
+.intro img{
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+    text-shadow: #000;
+    border-bottom-left-radius: 45%;
+    border-bottom-right-radius: 15%; 
+    width: 500px; 
+    margin-left: 30px; 
+    border: 2px solid #fff; 
+}
+
+.overlay {
+    background-image: url("image/photo-1553532646-968536ab10e7.jpg");
+}
+
+#skills h1 {
+    text-align: center; 
+    margin: 20px; 
+    font-size: 40px; 
+    color: #192a56;
+} 
+
+.skill1 {
+margin: 50px 0;
+ display: grid;  
+ grid-template-columns: 50% 50%; 
+ grid-template-rows: 50%;
+}
+.skill1 .img1 {
+    justify-self: center; 
+    
+ }
+   
+.skill1 img {
+    width: 180px;
+} 
+
+.skills1 {
+  width: 40%; 
+  margin: 0 auto;
+} 
+
+.skill1 .description {
+    width: 500px;
+}
+.skill1 .description h2 {
+    color: #c23616; 
+    font-weight: bold; 
+    font-size: 30px;
+}
+
+.skill1 .description p {
+   font-size: 18px; 
+   font-weight: lighter;
+}
+
+.line {
+    width: 3px; 
+    height: 50vh;
+    background-color: orange;
+}
+
+.social-media-links img {
+    width: 50px;
+    padding-left: 10px;
+} 
+
+.title_project {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.title_project h1{
+    font-size: 40px;
+    color: #192a56; 
+}
+
+.title_project p{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.project1 {
+    display: grid; 
+    grid-template-columns: 50% 50%; 
+    padding: 80px;
+} 
+
+.project-description1 {
+    width: 430px;
+}
+
+
+.project-link1 img{
+    width: 569px;
+    height: 378px;
+    border-radius: 10px; 
+    cursor: pointer;
+} 
+
+.button {
+  border-radius: 8px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 15px;
+  width: 130px; 
+  height: 80px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+} 
+
+.tools h1 {
+    text-align: center; 
+    font-size: 40px; 
+    color: #192a56;
+    font-weight: bold;
+} 
+
+.img-tools img{
+    width: 100px; 
+    margin-left: 30px;
+} 
+
+.img-tools {
+    display: flex; 
+    justify-content: center; 
+    padding-top: 30px;
+} 
+
+.ph {
+    width: 800px;
+    position: absolute; 
+    top: 1246px;
+    left: -98px;
+} 
+
+.contact_me {
+    text-decoration: underline; 
+    line-height: 1.6;
+} 
+
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(216, 216, 216); 
+    border-radius: 5px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #f1a145; 
+    border-radius: 6px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #d67a10; 
+  }
