@@ -62,9 +62,11 @@ body {
     font-size: 18px;
 }
 
+
 .header .links li a:hover {
     color: var(--orange-color);
     text-decoration: underline;
+    transition: 0.5 ease;
 } 
 /* !header section end  */ 
 
@@ -113,9 +115,30 @@ body {
 }
 /* !intro section end  */ 
 
+/* !About-us section start  */ 
+.about{
+  display: flex; 
+  margin-top: 150px;
+  justify-content: space-around;
+  /* grid-template-columns: repeat(2, 50%); */
+}
+
+#about-us .about-description {
+  width: 600px;
+}
+
+#about-us img {
+    vertical-align: middle;
+    border-style: none;
+    width: 450px;
+    /* margin-left: 50px; */
+}
+
+/* !About-us section end  */ 
+
 
 /* !Skills section start  */ 
-#skills h1 {
+#Lorem h1 {
     text-align: center; 
     margin: 20px; 
     font-size: 40px; 
@@ -132,14 +155,14 @@ margin: 50px 0;
     justify-self: center; 
     
  }
-   
+
 .skill img {
     width: 180px;
 } 
 
-.skills {
-  width: 40%; 
-  margin: 0 auto;
+#skill {
+  width: 60%; 
+  margin: 50 auto;
 } 
 
 .skill .description {
@@ -165,6 +188,12 @@ margin: 50px 0;
     padding-left: 10px;
 } 
 
+.project {
+    display: grid; 
+    grid-template-columns: 50% 50%; 
+    padding: 80px;
+} 
+
 .title_project {
     text-align: center;
     margin-top: 80px;
@@ -180,24 +209,17 @@ margin: 50px 0;
     font-weight: bold;
 }
 
-.project {
-    display: grid; 
-    grid-template-columns: 50% 50%; 
-    padding: 80px;
-} 
 
 .project-description1 {
     width: 430px;
 }
-
-
 .project-link1 img{
+    position: relative;
     width: 569px;
     height: 378px;
     border-radius: 10px; 
     cursor: pointer;
 } 
-
 
 .button {
   border-radius: 8px;
@@ -242,65 +264,56 @@ margin: 50px 0;
 
 
 
-/* !Tools section start  */ 
+/* !Skills section start  */ 
 
-.tools {
+#skills {
     width: 100%; 
-    height: 70vh;
+    height: 28vh;
+    margin: 50px auto 0;
 }
 
-.tools h1 {
+#skills h1 {
     text-align: center; 
     font-size: 40px; 
     color: var(--black-color);
     font-weight: bold;
 } 
 
-.img-tools img{
+#skills .img-skills img{
     width: 100px; 
     height: 100px;
-    margin-left: 60px;
+    margin-left: 90px;
 } 
 
-.img-tools {
+#skills .img-skills {
     display: flex; 
     justify-content: center; 
     padding-top: 30px;
 } 
 
-/* !Tools section start */ 
+/* !Skills section end */ 
 
-.contact_me {
-    text-decoration: underline; 
-    line-height: 1.6;
-} 
+/* !Contact section start */ 
+.contact-box {
+    width: 80vw; 
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
 
-/* !Scrollbar setting start  */ 
-/* width */
-::-webkit-scrollbar {
-    width: 20px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px var(--scrollbar-track);
-    border-radius: 5px;
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: var(--scrollbar-thumb);
-    border-radius: 6px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: var(--scrollbar-thumb-hover); 
-  }
-/* !Scrollbar setting end */ 
+.contact-box .form-box {
+    width: 40vw; 
+    margin: 40px auto 0;
+    border: 2px solid #555;
+    height: 60vh;
+}
 
+#contact img {
+ text-align: center; 
+ width: 80px;
+}
 
-/* !Footer Section end */ 
+/* !Footer Section start */ 
 .footer {
     background-color: #FCB844; 
     margin: 30px 0 0 0 ;
@@ -326,3 +339,28 @@ margin: 50px 0;
 } 
 
 /* !Footer Section end */ 
+
+
+/* !Scrollbar setting start  */ 
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px var(--scrollbar-track);
+    border-radius: 5px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb);
+    border-radius: 6px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--scrollbar-thumb-hover); 
+  }
+/* !Scrollbar setting end */ 
