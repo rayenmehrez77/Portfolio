@@ -19,7 +19,8 @@ body {
     padding: 0; 
     margin: 0; 
     background-color: #ecf0f1;
-    font-family: 'Poppins', sans-serif;  
+    font-family: 'Poppins', sans-serif; 
+    max-width: 100%; 
 }  
 
 /* !header section start */ 
@@ -85,12 +86,39 @@ body {
 
 .introduction-text h1 {
     font-size: 60px; 
+    animation-name: brand;
+    animation-duration: 2s;
 } 
+@keyframes brand {
+    0% {
+        opacity: 0; 
+        transform: translateX(-100px); 
+    } 
+   
+    100% {
+        opacity: 1;
+        transform: translateX(0); 
+    }
+   }
 
 .introduction-text h2 {
     font-size: 30px; 
     font-family: 'Open Sans', sans-serif;
+    animation-name: title; 
+    animation-duration: 2s;
 }  
+@keyframes title {
+ 0% {
+     opacity: 0; 
+     transform: translateX(100px); 
+ } 
+
+ 100% {
+     opacity: 1;
+     transform: translateX(0); 
+ }
+}
+
 .introduction-text span {
     color: var(--orange-color); 
     text-decoration: underline;
@@ -102,7 +130,22 @@ body {
     font-weight: bold; 
     width: 410px; 
     text-align: left;
+    animation-name: paragraph;
+    animation-duration: 1s;
 }
+
+@keyframes paragraph {
+    0% {
+        opacity: 0; 
+        transform: translateY(100px); 
+    } 
+   
+    100% {
+        opacity: 1;
+        transform: translateY(0); 
+    }
+   }
+
 
 .intro img{
     border-top-left-radius: 20%;
@@ -112,7 +155,20 @@ body {
     width: 500px; 
     margin-left: 30px; 
     border: 2px solid var(--white-color);
-}
+    animation-name: image;
+    animation-duration:2s;
+} 
+@keyframes image {
+    0% {
+        opacity: 0; 
+        transform: translateX(200px); 
+    } 
+   
+    100% {
+        opacity: 1;
+        transform: translateX(0); 
+    }
+   }
 /* !intro section end  */ 
 
 /* !About-us section start  */ 
@@ -337,6 +393,25 @@ margin: 50px 0;
     color: var(--footer-name);
     transition: 0.2s ease-out; 
 } 
+
+@media only screen and (max-width: 900px) {
+    .intro img {
+        width: 100%;
+        display: flex; 
+        justify-content: center;
+    }
+    .header h1 {
+        display: inline-block; 
+        font-size: 18px;
+        width: 200px;
+    }
+}
+
+
+
+
+
+
 
 /* !Footer Section end */ 
 
